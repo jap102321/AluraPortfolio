@@ -9,7 +9,11 @@
     position: sticky;
     top: 0;
 }
-
+.headerBrand{
+    display: flex;
+    align-items: center;
+    
+}
 .navBrand{
     margin-inline-start: 1rem;
 }

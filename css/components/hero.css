@@ -1,0 +1,29 @@
+.banner{
+    display: flex;
+    margin-block-start:4rem;
+}
+
+.hero{
+    display: flex;
+    margin: auto;
+    max-inline-size:1136px;
+}
+.hero__text{
+    max-inline-size: 600px;
+    flex-wrap: wrap;
+}
+.hero__text h1{
+    font-size: 52px;
+}
+.hero__image img{
+    max-inline-size:368px;
+    max-block-size: 368px;    
+  
+}
+
+.hero__link{
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
+    padding: 0;
+}
