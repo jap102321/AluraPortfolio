@@ -1,0 +1,75 @@
+.header{
+    background-color: var(--black);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    position: sticky;
+    top: 0;
+}
+
+.navBrand{
+    margin-inline-start: 1rem;
+}
+
+.navPage{    
+    display: flex;
+    align-items:center;
+}
+
+
+.navList{
+    display: flex;
+    gap: 55px;
+    margin-inline-end: 3rem;
+    list-style: none;
+}
+
+.navList.dropdown{
+    display: flex;
+    background-color: var(--black);
+    flex-direction: column;
+    position: fixed;
+    left:80%;
+    height: 350px;
+    padding: 16px;
+    top: 40px;
+
+}
+
+
+.nav-link a{
+    transition: 0.7s ease;
+    color: white;
+
+}
+
+.nav-link a:hover{
+    color: dodgerblue;
+}
+
+
+
+.hamburguer{
+    margin-inline-end: 20px;
+    display: none;
+    cursor: pointer;
+}
+
+.hamburguer i{
+    font-size: 24px;
+}
+
+@media(max-width:768px){
+    .navEmail{
+        display: none;
+    }
+    .hamburguer{
+        display:block;
+    }
+   .navList{
+    display: none;
+   }
+}

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body> 
+    <header class="header">
+        <h3 class="navBrand">Juan Pablo González</h3>
+        <nav class="navPage" data-nav>
+            <ul class="navList" data-nav-list>
+                <li class="nav-link"><a href="#">Sobre mi</a></li>
+                <li class="nav-link"><a href="#">Skills</a></li>
+                <li class="nav-link"><a href="#">Hobbies</a></li>
+                <li class="nav-link"><a href="#">Formación</a></li>
+                <li class="nav-link"><a href="#">Proyectos</a></li>
+            </ul>
+        </nav>
+        <div class="hamburguer" data-hamburguer-nav>
+            <i class="fa-solid fa-bars" ></i>
+        </div>
+    </header>
+    <section class="hero">
+        <div class="hero__text">
+            <h1>Hola, mi nombre es Juan Pablo y construyó páginas web</h1>
+            <p>Soy formado en Front-End Development y actualmente estoy particiapndo del proyecto Oracle ONE en Alura Latam.</p>
+        </div>
+        <div class="hero__image">
+            <img src="/images/unsplash_anAAZ0nrqBY.png" alt="Imagen Dev">
+        </div>
+        <div class="hero__socials">
+            <ul class="hero__link">
+                <li class="socialMedia"><a href="">Github</a></li>
+                <li class="socialMedia"><a href="">LinkedIn</a></li>
+                <li class="socialMedia"><a href="">Instagram</a></li>
+                <li class="socialMedia"><a href="">Curriculo</a></li>
+            </ul>
+        </div>
+    </section>
+    <section class="aboutMe">
+        <div class="aboutMe__text">
+            <h2 class="aboutMe__title">Sobre mi</h2>
+            <p class="aboutMe__paragraph">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, odit? Sint, voluptatibus. Eligendi quo aliquid sit? Laborum fuga in aspernatur natus magnam ab id est. Excepturi et nesciunt aperiam sapiente?
+            </p>
+        </div>
+        <div class="aboutMe__firma">
+            <img src="images/image 4.png" alt="">
+        </div>
+    </section>
+    <section class="skills">
+        <h2>Skills</h2>
+        <div class="detail__inside">
+            <div class="detail__image">Imagen skill</div>
+            <div class="detail__name">Nombre Hobby</div>
+        </div>
+    </section>
+    <section class="hobbies">
+        <h2>Hobbies</h2>
+        <div class="detail__inside">
+            <div class="detail__image">Imagen Hobby</div>
+            <div class="detail__name">Nombre Hobby</div>
+        </div>
+    </section>
+    <section class="academicFormation">
+        <h2>Formación Academica</h2>
+        <div class="academic__details">
+            <div class="academic__image">Imagen</div>
+            <div class="academic__text">Formación</div>
+            <div class="academic__date">Fecha</div>
+        </div>
+    </section>
+    <section class="portfolio">
+        <div class="portfolio__projects">
+            <div class="portfolio__image">Imagen</div>
+            <div class="portfolio__title">Titulo </div>
+            <div class="portfolio__description">Descripçion</div>
+            <div class="portfolio__buttons">
+                <button><a href="">Ver repo</a></button>
+                <button><a href="">Ver demo</a></button>
+            </div>
+        </div>
+    </section>
+    <section class="contact">
+        <div class="contact__image"></div>
+        <div class="contact__info">
+            <h2>Contacto</h2>
+            <p>Quieres contactarme?</p>
+            <p>Puedes hacerlo vía este formulario o vía 
+                <a href="" class="contactLink">LinkedIn</a>
+            </p>
+            <div class="contact__form">
+                <div class="contact">
+                    <label for="name">Nombre</label>
+                    <input type="text" name="name" id="">
+                </div>
+                <div class="contact">
+                    <label for="email">E-Mail</label>
+                    <input type="text" name="" id="">
+                </div>
+                <div class="contact">
+                    <label for="about">Asunto</label>
+                    <input type="text" name="about" id="">
+                </div>
+                <div class="contact">
+                    <label for="messageInput">Mensaje</label>
+                    <input type="text" name="messageInput" id="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="./JS/index.js" type="module"></script>
+</body>
+</html>
