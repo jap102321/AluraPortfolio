@@ -1,25 +1,36 @@
-@import './components/header.css';
-@import './components/hero.css';
-@import './components/transitions.css';
-@import './components/aboutme.css';
-body{
-    font-family: 'Raleway', sans-serif;
-    margin: 0;
-    padding: 0;
+@import "./components/header.css";
+@import "./components/hero.css";
+@import "./components/transitions.css";
+@import "./components/aboutme.css";
+@import "./components/skills.css";
+@import "./components/reset.css";
+
+body {
+  font-family: "Raleway", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-darkblue);
 }
 
-a{
-    text-decoration: none;
-    color: black;
+a {
+  text-decoration: none;
+  color: black;
 }
 
-li{
-    list-style: none;
+li {
+  list-style: none;
 }
 
-
-:root{
-    --black : #262626;
-    --bg-blue: #EAF2FD;
+.data-container {
+  max-inline-size: 1136px;
+  margin: auto;
+  margin-block: 2.5rem;
 }
 
+:root {
+  --black: #262626;
+  --bg-blue: #eaf2fd;
+  --bg-darkblue: #263762;
+  --purple: #3d1c7a;
+  --purpleShadow: #641a91;
+}

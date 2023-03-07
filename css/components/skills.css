@@ -1,0 +1,36 @@
+.skills {
+  display: flex;
+  flex-direction: column;
+  max-inline-size: 1136px;
+  align-items: center;
+}
+.skill__div {
+  display: grid;
+  grid-template-columns: repeat(4, 150px);
+  grid-template-rows: repeat(2, 100px);
+  justify-content: center;
+  gap: 1rem;
+}
+.skills h2 {
+  font-size: 40px;
+}
+.skill__data {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  background-color: var(--purple);
+  box-shadow: 5px 5px 8px var(--purpleShadow);
+  cursor: default;
+}
+.skill__data:hover {
+  transform: scale(1.1);
+  transition: ease-in-out 0.5s;
+}
+.detail__image {
+  margin-block-end: 10px;
+}
+.detail__image img {
+  width: 42px;
+  height: 42px;
+}
