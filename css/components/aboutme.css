@@ -1,0 +1,21 @@
+.aboutMe{
+    display: flex;
+    flex-direction: row;
+    max-inline-size:1136px;
+    margin: auto;
+}
+
+
+
+.aboutMe__image img{    
+    inline-size: 400px;
+    block-size: 400px;
+}
+
+.aboutMe__text{
+    align-self: center;
+}
+
+.aboutMe__text h2{
+    font-size: 40px;
+}

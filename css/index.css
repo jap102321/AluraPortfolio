@@ -1,6 +1,7 @@
 @import './components/header.css';
 @import './components/hero.css';
 @import './components/transitions.css';
+@import './components/aboutme.css';
 body{
     font-family: 'Raleway', sans-serif;
     margin: 0;
