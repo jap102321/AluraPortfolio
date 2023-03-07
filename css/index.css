@@ -1,5 +1,6 @@
 @import './components/header.css';
 @import './components/hero.css';
+@import './components/transitions.css';
 body{
     font-family: 'Raleway', sans-serif;
     margin: 0;
@@ -18,5 +19,6 @@ li{
 
 :root{
     --black : #262626;
+    --bg-blue: #EAF2FD;
 }
 
