@@ -16,6 +16,10 @@
 .hero__text h1 {
   font-size: 52px;
 }
+.hero__image {
+  display: flex;
+  justify-content: center;
+}
 .hero__image img {
   max-inline-size: 368px;
   max-block-size: 368px;
@@ -31,4 +35,23 @@
 .hero__link li:hover {
   transform: scale(1.2);
   transition: all 0.5s;
+}
+
+@media (max-width: 830px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+  .hero__image {
+    order: -1;
+  }
+  .hero__text {
+    inline-size: 350px;
+  }
+  .hero__socials p {
+    display: none;
+  }
+  .hero__socials {
+    width: 0;
+  }
 }
