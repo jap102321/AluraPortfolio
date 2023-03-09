@@ -30,6 +30,8 @@
   flex-direction: row;
   gap: 4rem;
   padding: 0;
+  font-size: 32px;
+  justify-content: center;
 }
 
 .hero__link li:hover {
@@ -51,7 +53,9 @@
   .hero__socials p {
     display: none;
   }
-  .hero__socials {
-    width: 0;
+  .hero__socials ul {
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
   }
 }

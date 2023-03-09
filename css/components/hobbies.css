@@ -21,7 +21,8 @@
   flex-direction: column;
   align-items: center;
   padding: 1rem;
-  border: 1px solid red;
+  background-color: var(--blue-hobbie);
+  border-radius: 12px;
 }
 
 .hobbies__image img {
@@ -36,6 +37,6 @@
   .hobbies__div {
     grid-template-columns: repeat(2, 175px);
     gap: 1.5rem;
-    padding: 2rem;
+    margin: 0;
   }
 }
