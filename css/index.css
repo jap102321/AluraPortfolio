@@ -6,6 +6,7 @@
 @import "./components/hobbies.css";
 @import "./components/reset.css";
 @import "./components/academic.css";
+@import "./components/portfolio.css";
 body {
   font-family: "Raleway", sans-serif;
   margin: 0;
