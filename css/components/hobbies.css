@@ -7,6 +7,7 @@
 }
 .hobbies h2 {
   font-size: 40px;
+  margin: 0;
 }
 
 .hobbies__div {
@@ -15,16 +16,27 @@
   justify-content: center;
   gap: 5rem;
 }
-
+.hobbies__intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-inline-size: 300px;
+  text-align: center;
+}
 .hobbies__data {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 1rem;
-  background-color: var(--blue-hobbie);
   border-radius: 12px;
+  background-color: var(--purple);
+  box-shadow: 5px 5px 8px var(--purpleShadow);
 }
 
+.hobbies__data:hover {
+  transform: scale(1.1);
+  transition: all 1.5s;
+}
 .hobbies__image img {
   inline-size: 150px;
 }
@@ -35,8 +47,11 @@
 
 @media (max-width: 830px) {
   .hobbies__div {
-    grid-template-columns: repeat(2, 175px);
+    grid-template-columns: repeat(3, 100px);
     gap: 1.5rem;
     margin: 0;
+  }
+  .hobbies__image img {
+    inline-size: 70px;
   }
 }

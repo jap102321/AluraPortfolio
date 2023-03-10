@@ -5,12 +5,13 @@
 @import "./components/skills.css";
 @import "./components/hobbies.css";
 @import "./components/reset.css";
-
+@import "./components/academic.css";
 body {
   font-family: "Raleway", sans-serif;
   margin: 0;
   padding: 0;
-  background-color: var(--bg-darkblue);
+  background: url(../images/0x0.png);
+  background-size: auto;
 }
 
 a {
