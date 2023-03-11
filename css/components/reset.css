@@ -5,3 +5,7 @@ p,
 label {
   color: var(--bg-blue);
 }
+
+p {
+  padding-inline: 10rem;
+}

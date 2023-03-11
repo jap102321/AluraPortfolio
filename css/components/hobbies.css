@@ -46,6 +46,10 @@
 }
 
 @media (max-width: 830px) {
+  .hobbies__intro {
+    max-width: 350px;
+    margin-block-end: 2.5rem;
+  }
   .hobbies__div {
     grid-template-columns: repeat(3, 100px);
     gap: 1.5rem;
