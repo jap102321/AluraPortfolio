@@ -128,8 +128,9 @@ i {
   .portfolio__div {
     grid-template-columns: repeat(1, 300px);
     grid-template-rows: repeat(4, 300px);
+    gap: 2rem;
     align-content: center;
-    margin-inline-start: 1rem;
+    margin-inline-start: 2rem;
   }
 
   .portfolio__projects {
