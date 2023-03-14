@@ -127,7 +127,13 @@ i {
 
   .portfolio__div {
     grid-template-columns: repeat(1, 300px);
-    grid-template-rows: repeat(4, 280px);
+    grid-template-rows: repeat(4, 300px);
+    align-content: center;
+    margin-inline-start: 1rem;
+  }
+
+  .portfolio__projects {
+    margin: 0;
   }
 
   .project__description {
