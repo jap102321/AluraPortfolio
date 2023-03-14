@@ -6,7 +6,7 @@
 
 .aboutMe__image img {
   max-inline-size: 400px;
-  max-block-size: 400px;
+  max-block-size: 300px;
 }
 
 .aboutMe__text {

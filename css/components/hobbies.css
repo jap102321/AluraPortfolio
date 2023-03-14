@@ -7,10 +7,10 @@
 }
 .hobbies h2 {
   font-size: 40px;
-  margin: 0;
 }
 
 .hobbies__div {
+  margin-block-start: 2.5rem;
   display: grid;
   grid-template-columns: repeat(3, 170px);
   justify-content: center;
