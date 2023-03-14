@@ -115,30 +115,36 @@ i {
 @media (max-width: 830px) {
   .portfolio {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
   }
   .portfolio__intro {
     text-align: center;
     max-width: 350px;
   }
-  .portfolio__projects {
-    margin-block-end: -100px;
-  }
-  .portfolio__div {
-    grid-template-columns: repeat(1, 300px);
-    grid-template-rows: repeat(4, 450px);
-    padding-inline-start: 1.7rem;
-  }
-  .project--front {
-    max-width: 300px;
-  }
-  .dropped {
-    max-width: 300px;
-    max-height: 300px;
-    transform: translateY(212px);
+  .project__image img {
+    max-inline-size: 250px;
   }
 
-  .project__image img {
-    max-inline-size: 300px;
+  .portfolio__div {
+    grid-template-columns: repeat(1, 300px);
+    grid-template-rows: repeat(4, 280px);
+  }
+
+  .project__description {
+    display: none;
+  }
+  .project--front {
+    max-width: 250px;
+  }
+
+  .dropped {
+    max-width: 250px;
+    max-height: 250px;
+    transform: translateY(190px);
+  }
+  .project__buttons {
+    align-self: center;
+    max-width: 230px;
+    gap: 2rem;
   }
 }
