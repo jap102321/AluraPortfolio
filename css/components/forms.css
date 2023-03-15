@@ -1,0 +1,74 @@
+/* Basic Styling */
+.contact {
+  display: flex;
+  justify-content: center;
+  margin-block-start: 15rem;
+  margin-block-end: 4rem;
+}
+
+.contact__info {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  height: 400px;
+}
+
+.contact__data {
+  margin-inline-end: 1rem;
+}
+
+.contact__image img {
+  width: 350px;
+}
+
+.contact__text {
+  max-inline-size: 300px;
+  margin-block-end: 1rem;
+}
+
+.contactInput {
+  display: flex;
+  flex-direction: column;
+  margin-block-end: 1.1rem;
+}
+
+.input {
+  box-sizing: border-box;
+  border-bottom: 2px solid var(--purpleShadow);
+  padding: 0.5rem;
+}
+.input::placeholder {
+  font-family: "Raleway", sans-serif;
+  color: #000000;
+}
+/* Dynamic Styling */
+
+.input-message-error {
+  display: none;
+}
+
+.contactInput--invalid {
+  color: red;
+}
+.contactInput--invalid .input {
+  border: 4px solid red;
+  border-radius: 7px;
+}
+.contactInput--invalid .input-message-error {
+  display: block;
+  color: red;
+  margin-top: 0.5rem;
+  padding-left: 0.5rem;
+}
+#messageInput {
+  padding-block: 1.1rem;
+}
+.button-submit {
+  padding: 0.5rem;
+  width: 100px;
+  background-color: rebeccapurple;
+  border: none;
+  border-radius: 3px;
+  color: white;
+  cursor: pointer;
+}

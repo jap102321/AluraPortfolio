@@ -18,9 +18,9 @@
 
 <body>
 
-    <header class="header" id="top">
+    <header class="header">
         <div class="headerBrand">
-            <img src="./images/hot-air-balloon-svgrepo-com.svg" alt="" class="brandImg">
+            <img src="./images/hot-air-balloon-svgrepo-com.svg" alt="logo img" class="brandImg">
             <h3 class="navBrand"><a href="#top" style="color: white;">Juan Pablo González</a></h3>
         </div>
         <nav class="navPage " data-nav>
@@ -153,7 +153,7 @@
             </div>
             <div class="academic__div">
                 <div class="academic__details">
-                    <div class="academic__image"><img src="./images/logos/ztm.png" alt="Sophos Logo" srcset="">
+                    <div class="academic__image"><img src="./images/logos/ztm.png" alt="ZTM Logo" srcset="">
                     </div>
                     <div class="academic__text">
                         <h3>CSS, Advanced JS</h3>
@@ -206,7 +206,7 @@
 
                 <div class="portfolio__projects" data-main>
                     <div class="project--front">
-                        <div class="project__image"><img src="./images/projects/jaume.png" alt=""></div>
+                        <div class="project__image"><img src="./images/projects/jaume.png" alt="Portfolio img"></div>
                         <div class="project__title">
                             <h3>Portafolio de Jaume</h3>
                             <div class="moreInfo" data-moreInfo>
@@ -235,7 +235,7 @@
                 </div>
                 <div class="portfolio__projects" data-main>
                     <div class="project--front">
-                        <div class="project__image"><img src="./images/projects/sbank.png" alt=""></div>
+                        <div class="project__image"><img src="./images/projects/sbank.png" alt="Portfolio img"></div>
                         <div class="project__title">
                             <h3>Sophos Bank</h3>
                             <div class="moreInfo" data-moreInfo>
@@ -268,7 +268,8 @@
                 </div>
                 <div class="portfolio__projects" data-main>
                     <div class="project--front">
-                        <div class="project__image"><img src="./images/projects/yourproject.png" alt=""></div>
+                        <div class="project__image"><img src="./images/projects/yourproject.png" alt="Portfolio img">
+                        </div>
                         <div class="project__title">
                             <h3>Tu proyecto!</h3>
                             <div class="moreInfo" data-moreInfo>
@@ -287,33 +288,57 @@
             </div>
         </section>
         <section class="contact" id="contact__id">
-            <div class="contact__image"></div>
+
             <div class="contact__info">
-                <h2>Contacto</h2>
-                <p>Quieres contactarme?</p>
-                <p>Puedes hacerlo vía este formulario o vía
-                    <a href="" class="contactLink">LinkedIn</a>
-                </p>
-                <div class="contact__form">
-                    <div class="contact">
-                        <label for="name">Nombre</label>
-                        <input type="text" name="name" id="">
+                <div class="contact__data">
+                    <div class="contact__text">
+                        <h2>Contacto</h2>
+                        <p>Que te parece si despegamos?</p>
+                        <p>Puedes hacerlo vía este formulario o vía
+                            <a href="" class="contactLink" style="color:blue">LinkedIn</a>
+                        </p>
                     </div>
-                    <div class="contact">
-                        <label for="email">E-Mail</label>
-                        <input type="text" name="" id="">
-                    </div>
-                    <div class="contact">
-                        <label for="about">Asunto</label>
-                        <input type="text" name="about" id="">
-                    </div>
-                    <div class="contact">
-                        <label for="messageInput">Mensaje</label>
-                        <input type="text" name="messageInput" id="">
+                    <div class="contact__image">
+                        <img src="./images/rocket__form.jpg" alt="">
                     </div>
                 </div>
+                <form>
+                    <fieldset>
+                        <div class="contactInput">
+                            <label class="form_label" for="name">Nombre</label>
+                            <input required placeholder="John Doe" type="text" class="input" name="name" id="name"
+                                data-type="nombre">
+                            <span class="input-message-error">Este campo no es valido</span>
+                        </div>
+                        <div class="contactInput">
+                            <label class="form_label" for="email">E-Mail</label>
+                            <input required placeholder="example@example.com" type="email" class="input" name="email"
+                                id="email" data-type="email">
+                            <span class="input-message-error">Este campo no es valido</span>
+                        </div>
+                        <div class="contactInput">
+                            <label class="form_label" for="aboutForm">Asunto</label>
+                            <input required type="text" placeholder="Asunto" class="input" name="aboutForm"
+                                id="aboutForm" data-type="asunto">
+                            <span class="input-message-error">Este campo no es valido</span>
+                        </div>
+                        <div class="contactInput">
+                            <label class="form_label" for="messageInput">Mensaje</label>
+                            <input required type="text" class="input" name="messageInput" id="messageInput"
+                                data-type="mensaje" placeholder="Mensaje ejemplo">
+                            <span class="input-message-error">Este campo no es valido</span>
+                        </div>
+
+                        <div class="button">
+                            <button class="button-submit" type="submit">Enviar</button>
+                        </div>
+                    </fieldset>
+                </form>
             </div>
         </section>
+        <footer class="footer">
+
+        </footer>
         <script src="./JS/index.js" type="module"></script>
     </main>
 </body>
