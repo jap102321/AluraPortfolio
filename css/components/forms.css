@@ -41,6 +41,11 @@
   font-family: "Raleway", sans-serif;
   color: #000000;
 }
+
+fieldset {
+  border: none;
+}
+
 /* Dynamic Styling */
 
 .input-message-error {
@@ -60,9 +65,9 @@
   margin-top: 0.5rem;
   padding-left: 0.5rem;
 }
-#messageInput {
-  padding-block: 1.1rem;
-}
+
+/* button */
+
 .button-submit {
   padding: 0.5rem;
   width: 100px;
@@ -71,4 +76,27 @@
   border-radius: 3px;
   color: white;
   cursor: pointer;
+}
+
+@media (max-width: 803px) {
+  .contact {
+    margin-block-start: 0;
+  }
+  .contact__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+  }
+  .contact__data {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .contact__text {
+    text-align: center;
+  }
+  .contact__image {
+    display: none;
+  }
 }

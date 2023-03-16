@@ -1,6 +1,5 @@
 export const validate = (input) => {
   const inputType = input.dataset.type;
-  console.log(inputType);
   if (validate[inputType]) {
     validate[inputType](input);
   }
@@ -15,6 +14,18 @@ export const validate = (input) => {
   }
 };
 
+export const validateTextArea = (tarea) => {
+  const textarea = tarea.dataset.type;
+  if (tarea.validity.valid) {
+    tarea.parentElement.classList.remove("contactInput--invalid");
+    tarea.parentElement.querySelector(".input-message-error").innerHTML = "";
+  } else {
+    tarea.parentElement.classList.add("contactInput--invalid");
+    tarea.parentElement.querySelector(".input-message-error").innerHTML =
+      showErrorMsg(textarea, tarea);
+  }
+};
+
 const errorTypes = [
   "valueMissing",
   "typeMismatch",
@@ -24,25 +35,25 @@ const errorTypes = [
 
 const errorMessage = {
   nombre: {
-    valueMissing: "El campo no puede estar vacio.",
+    valueMissing: "El campo nombre no puede estar vacio.",
   },
   email: {
-    valueMissing: "El campo no puede estar vacio.",
+    valueMissing: "El campo email no puede estar vacio.",
     typeMismatch: "El correo no es válido.",
   },
   asunto: {
-    valueMissing: "El campo no puede estar vacio.",
+    valueMissing: "El campo asunto no puede estar vacio.",
   },
   mensaje: {
     valueMissing: "Debes incluir algun mensaje!",
   },
 };
 
-const showErrorMsg = (inputType, input) => {
+const showErrorMsg = (dataType, element) => {
   let message = "";
   errorTypes.forEach((err) => {
-    if (input.validity[err]) {
-      message = errorMessage[inputType][err];
+    if (element.validity[err]) {
+      message = errorMessage[dataType][err];
     }
   });
   return message;
