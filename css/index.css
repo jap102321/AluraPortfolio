@@ -8,7 +8,7 @@
 @import "./components/academic.css";
 @import "./components/portfolio.css";
 @import "./components/forms.css";
-
+@import "./components/footer.css";
 * {
   scroll-margin-block-start: 5rem;
 }

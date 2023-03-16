@@ -1,0 +1,17 @@
+.footer {
+  background-color: var(--purple);
+  padding-block: 1rem;
+}
+
+.footer__div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer__socials {
+  margin-block-start: 0.5rem;
+}
+.footer__socials i {
+  font-size: 32px;
+  margin-inline-end: 1rem;
+}
