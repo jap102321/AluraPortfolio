@@ -1,5 +1,5 @@
 .footer {
-  background-color: var(--purple);
+  background-color: var(--black);
   padding-block: 1rem;
 }
 
@@ -14,4 +14,5 @@
 .footer__socials i {
   font-size: 32px;
   margin-inline-end: 1rem;
+  color: white;
 }

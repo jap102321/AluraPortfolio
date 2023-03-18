@@ -58,3 +58,13 @@ const showErrorMsg = (dataType, element) => {
   });
   return message;
 };
+
+const buttonSubmit = document.querySelector("[data-buttonSbmt]");
+
+buttonSubmit.addEventListener("click", (e) => {
+  e.preventDefault();
+  document.querySelectorAll("input").forEach((data) => {
+    data.value = "";
+  });
+  document.querySelector("textarea").value = "";
+});

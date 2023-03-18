@@ -29,9 +29,11 @@
 .contactInput {
   display: flex;
   flex-direction: column;
-  margin-block-end: 1.1rem;
+  margin-block-end: 0.7rem;
 }
-
+.formSubmit {
+  max-block-size: 300px;
+}
 .input {
   box-sizing: border-box;
   border-bottom: 2px solid var(--purpleShadow);
