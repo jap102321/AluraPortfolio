@@ -21,6 +21,10 @@ body {
   margin: 0;
   padding: 0;
   background: url(../images/0x0.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: left;
   background-size: auto;
 }
 
@@ -31,6 +35,9 @@ a {
 
 li {
   list-style: none;
+}
+p {
+  cursor: default;
 }
 
 .data-container {
